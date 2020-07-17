@@ -28,5 +28,5 @@ function greet(timeString){
 /* Write your implementation of displayMessage() */
 function displayMessage(greeting) {
 let content = document.getElementById("greeting") ;
-content.textContent = "greeting" ;
+content.textContent = greeting ;
 }
