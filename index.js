@@ -12,23 +12,22 @@ function handleClick(e) {
 
 /* Write your implementation of greet() */
 function greet(timeString){
-  let htime = timeString.split(':').
-  let itime = parseInt(htime);
-  return itime ;
+  let htime = timeString.split(':');
+  let time = parseInt(htime, 10);
+  if (time < 12) {
+  return "Good Morning";
+
+  }else if (time > 12 && time < 17) {
+  return "Good Afternoon";
+  }
+  else {
+    return "Good Evening";
+  }
 
 }
 /* Write your implementation of displayMessage() */
-function displayMessage(time) {
+function displayMessage(greeting) {
 
-  let greatingMass = document.getElementById('greeting');
-  if (time < 12) {
-    greatingMass.innerHTML = "Good Morning"
-
-  }else if (time > 12 && time < 17) {
-    greatingMass.innerHTML = "Good Afternoon";
-  }
-  else {
-    greatingMass.innerHTML = "Good Evening";
-  }
-
+  let greatingMass = document.querySelector('h1#greeting');
+  greatingMass.innerHTML = "greeting" ;
 }
