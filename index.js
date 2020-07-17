@@ -28,5 +28,5 @@ function greet(timeString){
 /* Write your implementation of displayMessage() */
 function displayMessage(greeting) {
 
-  let greatingMass = document.getElementById('greeting').innerHTML = greeting ;
+ document.getElementById('greeting').innerHTML = greeting ;
 }
